@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            //"preLaunchTask": "tasks.json",
+            "preLaunchTask": "build project",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

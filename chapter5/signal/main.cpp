@@ -20,6 +20,7 @@ int main(){
     std::cout<<"begin"<<std::endl;
     int ret = fork();
     if(ret == 0){
+        
         std::cout<<"I am child"<<std::endl;
         exit(0);
     }else if(ret > 0){

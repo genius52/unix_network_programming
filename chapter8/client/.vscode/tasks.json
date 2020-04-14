@@ -5,7 +5,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "gcc build active file",
+            "label": "build project",
             "command": "gcc -g -o main main.cpp",
             // "command": "/usr/bin/g++",
             // "args": [

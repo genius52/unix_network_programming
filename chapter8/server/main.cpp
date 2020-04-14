@@ -37,7 +37,9 @@ again:
 }
 
 int main(int argc,char **argv){
+    struct servent* sptr;
     int listenfd,connfd,udpfd,nready,maxfdp1;
+
     char mesg[MAX_LINE];
     pid_t childpid;
     fd_set rset;
