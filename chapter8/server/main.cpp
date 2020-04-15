@@ -9,6 +9,7 @@
 #include <wait.h>
 #include <algorithm>
 #include <errno.h>
+#include <syslog.h>
 #define SERV_PORT 9527
 #define MAX_LINE 2048
 
@@ -37,6 +38,7 @@ again:
 }
 
 int main(int argc,char **argv){
+    syslog(LOG_ERR,"test syslog");
     struct servent* sptr;
     int listenfd,connfd,udpfd,nready,maxfdp1;
 
