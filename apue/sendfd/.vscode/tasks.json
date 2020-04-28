@@ -5,8 +5,10 @@
             "label": "g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
-                "-g",
+                "-std=c++17",
+                "-pthread",
                 "${file}",
+                "-g",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
